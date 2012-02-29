@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>test</title>
+    <script type="text/javascript">
+        function show() {
+            var a = new Array();
+            var i = 1;
+            for (i = 1; i <= 6; i++) {
+                a[i] = "img/" + i.toString() + ".gif";
+            }
+            var ima = new Array();
+            for (i = 1; i <= 6; i++) {
+                var image = document.getElementById("image");
+                ima[i] = document.createElement('img');
+                ima[i].src = a[i];
+                image.appendChild(ima[i]);
+            }
+        }
+    </script>
+</head>
+<body onload="javascript:show()">
+    <div id="image">
+    </div>
+</body>
+</html>
